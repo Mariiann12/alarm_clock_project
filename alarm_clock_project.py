@@ -1,26 +1,17 @@
 # This is my final project file ###
-
-
 # Importing all the needed packages
 from tkinter.ttk import *
 from tkinter import *
-
 from time import sleep
 from datetime import datetime
 from pygame import mixer
 from threading import Thread
-
 # For image support
 from PIL import ImageTk, Image
-from traitlets import Integer
 
 # Colours for Window
-
-# light grey
 bg_color = '#FAF9F6'
-# dark grey
 line_colour = "#5A5A5A"
-# medium grey
 body_colour = "#939799"
 # dark teal blue
 notification_bg = "#11bfb1"
@@ -62,35 +53,35 @@ hour = Label(frame_body, text="Hour: ", height=1, font='Ivy 16 bold', bg=line_co
 hour.place(x=125, y=145)
 
 # hour setting:
-c_hour = Combobox(frame_body, width=4, font='arial 15')
-c_hour['values'] = ("00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12")
-c_hour.current(0)
-c_hour.place(x=125, y=175)
+count_hour = Combobox(frame_body, width=4, font='arial 15')
+count_hour['values'] = ("00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12")
+count_hour.current(0)
+count_hour.place(x=125, y=175)
 
 # label for minutes
 min_print = Label(frame_body, text="Min:   ", height=1, font='Ivy 16 bold', bg=line_colour, fg=bg_color)
 min_print.place(x=195, y=145)
 
 # setting minutes:
-c_min = Combobox(frame_body, width=4, font='arial 15')
-c_min['values'] = (
+count_min = Combobox(frame_body, width=4, font='arial 15')
+count_min['values'] = (
     "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18",
     "19",
     "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38",
     "39",
     "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58",
     "59")
-c_min.current(0)
-c_min.place(x=195, y=175)
+count_min.current(0)
+count_min.place(x=195, y=175)
 
 # label for period of time
 period = Label(frame_body, text="AM/PM: ", height=1, font='Ivy 16 bold', bg=line_colour, fg=bg_color)
 period.place(x=265, y=145)
 # setting period of time
-c_period = Combobox(frame_body, width=4, font='arial 15')
-c_period['values'] = ("AM", "PM")
-c_period.current(0)
-c_period.place(x=265, y=175)
+count_period = Combobox(frame_body, width=4, font='arial 15')
+count_period['values'] = ("AM", "PM")
+count_period.current(0)
+count_period.place(x=265, y=175)
 
 
 # defined function to start the alarm action
@@ -139,13 +130,13 @@ def alarm():
     while True:
 
         control = selected.get()
-        # time.sleep(1)
+
         # prints in terminal for monitoring, shows count
         print("Control Value: ", control)
 
-        alarm_hour = c_hour.get()
-        alarm_min = c_min.get()
-        alarm_period = c_period.get()
+        alarm_hour = count_hour.get()
+        alarm_min = count_min.get()
+        alarm_period = count_period.get()
         alarm_period = str(alarm_period).upper()
 
         # variable for current time

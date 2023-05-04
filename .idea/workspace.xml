@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1626a8a6-d6b1-4cd1-9ff3-bd9ca25162a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/alarm_clock.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/clock_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alarm_clock_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alarm_clock_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alarm_sound.wav" afterDir="false" />
+    <list default="true" id="1626a8a6-d6b1-4cd1-9ff3-bd9ca25162a3" name="Changes" comment="Reset alarm issue fixed">
+      <change afterPath="$PROJECT_DIR$/.idea/Alarm_Clock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/alarm_activate.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alarm_clock_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/alarm_clock_project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Mary Ann",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,6 +89,35 @@
       <option name="presentableId" value="Default" />
       <updated>1683190326620</updated>
     </task>
+    <task id="LOCAL-00001" summary="Reset alarm issue fixed">
+      <created>1683194079038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683194079038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Reset alarm issue fixed">
+      <created>1683194157445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683194157445</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Reset alarm issue fixed">
+      <created>1683194199723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683194199723</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Reset alarm issue fixed">
+      <created>1683194213985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683194213985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reset alarm issue fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset alarm issue fixed" />
   </component>
 </project>
