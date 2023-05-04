@@ -94,18 +94,29 @@ def activate_alarm():
 # Function to stop alarm sound
 def deactivate_alarm():
     print('Deactivated alarm: ', selected.get())
+
     mixer.music.stop()
+    deactivate_alarm_label = Label(frame_body, text="Alarm Deactivated", height=1, font='Ivy 18 bold',
+                                   bg=notification_bg)
+    deactivate_alarm_label.place(x=15, y=225)
+    deactivate_alarm_label.after(6000, deactivate_alarm_label.destroy)
 
 
+# snooze function activated with the snooze button
 def snooze():
-    print("snoozing")
     mixer.music.stop()
-    # snooze for 5 min using sleep
-    time.sleep(300)
+    # label is not currently displaying due to the time.sleep()
+    snooze_label = Label(frame_body, text="Snooze for 2 minutes", height=1, font='Ivy 18 bold')
+    snooze_label.place(x=15, y=225)
+    snooze_label.after(4000, snooze_label.destroy)
+    # snooze for 2 minutes
+    time.sleep(120)
     sound_alarm()
 
 
+# variable used to change the current process, default value is 0
 selected = IntVar()
+
 # radio button to activate the alarm for the time selected
 button = Radiobutton(frame_body, font="ivy 12 bold", value=1, text="Set Alarm", command=activate_alarm,
                      variable=selected)
@@ -163,6 +174,7 @@ def alarm():
         sleep(1)
 
 
+# controls the playback for the alarm sound
 mixer.init()
 
 # end of window page loop
