@@ -8,6 +8,7 @@ from pygame import mixer
 from threading import Thread
 # For image support
 from PIL import ImageTk, Image
+import time
 
 # Colours for Window
 bg_color = '#FAF9F6'
@@ -98,6 +99,10 @@ def deactivate_alarm():
 
 def snooze():
     print("snoozing")
+    mixer.music.stop()
+    # snooze for 5 min using sleep
+    time.sleep(300)
+    sound_alarm()
 
 
 selected = IntVar()
@@ -120,9 +125,6 @@ def sound_alarm():
     snooze_button = Radiobutton(frame_body, font='ivy 16 bold', value=3, text="Snooze", bg=bg_color,
                                 command=snooze, variable=selected)
     snooze_button.place(x=35, y=285)
-
-    if selected == 3:
-        print("snooze button pressed")
 
 
 # Defined function that sets conditions for alarm
